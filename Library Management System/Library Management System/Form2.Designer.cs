@@ -35,6 +35,15 @@ namespace Library_Management_System
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.txtbookid = new System.Windows.Forms.TextBox();
+            this.txtauthor = new System.Windows.Forms.TextBox();
+            this.txttitle = new System.Windows.Forms.TextBox();
+            this.txtprice = new System.Windows.Forms.TextBox();
+            this.txtdate = new System.Windows.Forms.TextBox();
+            this.btnviewbooks = new System.Windows.Forms.Button();
+            this.btndeletebooks = new System.Windows.Forms.Button();
+            this.btnbookadd = new System.Windows.Forms.Button();
+            this.btnhome = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -50,7 +59,7 @@ namespace Library_Management_System
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 97);
+            this.label2.Location = new System.Drawing.Point(184, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 1;
@@ -59,7 +68,7 @@ namespace Library_Management_System
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 126);
+            this.label3.Location = new System.Drawing.Point(184, 137);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 2;
@@ -68,7 +77,7 @@ namespace Library_Management_System
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 154);
+            this.label4.Location = new System.Drawing.Point(184, 174);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 3;
@@ -77,7 +86,7 @@ namespace Library_Management_System
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 181);
+            this.label5.Location = new System.Drawing.Point(184, 215);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 4;
@@ -86,11 +95,82 @@ namespace Library_Management_System
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 206);
+            this.label6.Location = new System.Drawing.Point(184, 255);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Date";
+            // 
+            // txtbookid
+            // 
+            this.txtbookid.Location = new System.Drawing.Point(319, 94);
+            this.txtbookid.Name = "txtbookid";
+            this.txtbookid.Size = new System.Drawing.Size(100, 20);
+            this.txtbookid.TabIndex = 6;
+            // 
+            // txtauthor
+            // 
+            this.txtauthor.Location = new System.Drawing.Point(319, 134);
+            this.txtauthor.Name = "txtauthor";
+            this.txtauthor.Size = new System.Drawing.Size(100, 20);
+            this.txtauthor.TabIndex = 7;
+            // 
+            // txttitle
+            // 
+            this.txttitle.Location = new System.Drawing.Point(319, 174);
+            this.txttitle.Name = "txttitle";
+            this.txttitle.Size = new System.Drawing.Size(100, 20);
+            this.txttitle.TabIndex = 8;
+            // 
+            // txtprice
+            // 
+            this.txtprice.Location = new System.Drawing.Point(319, 215);
+            this.txtprice.Name = "txtprice";
+            this.txtprice.Size = new System.Drawing.Size(100, 20);
+            this.txtprice.TabIndex = 9;
+            // 
+            // txtdate
+            // 
+            this.txtdate.Location = new System.Drawing.Point(319, 255);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.Size = new System.Drawing.Size(100, 20);
+            this.txtdate.TabIndex = 10;
+            // 
+            // btnviewbooks
+            // 
+            this.btnviewbooks.Location = new System.Drawing.Point(592, 120);
+            this.btnviewbooks.Name = "btnviewbooks";
+            this.btnviewbooks.Size = new System.Drawing.Size(75, 23);
+            this.btnviewbooks.TabIndex = 11;
+            this.btnviewbooks.Text = "View";
+            this.btnviewbooks.UseVisualStyleBackColor = true;
+            // 
+            // btndeletebooks
+            // 
+            this.btndeletebooks.Location = new System.Drawing.Point(592, 205);
+            this.btndeletebooks.Name = "btndeletebooks";
+            this.btndeletebooks.Size = new System.Drawing.Size(75, 23);
+            this.btndeletebooks.TabIndex = 12;
+            this.btndeletebooks.Text = "Delete";
+            this.btndeletebooks.UseVisualStyleBackColor = true;
+            // 
+            // btnbookadd
+            // 
+            this.btnbookadd.Location = new System.Drawing.Point(592, 255);
+            this.btnbookadd.Name = "btnbookadd";
+            this.btnbookadd.Size = new System.Drawing.Size(75, 23);
+            this.btnbookadd.TabIndex = 13;
+            this.btnbookadd.Text = "Add";
+            this.btnbookadd.UseVisualStyleBackColor = true;
+            // 
+            // btnhome
+            // 
+            this.btnhome.Location = new System.Drawing.Point(12, 334);
+            this.btnhome.Name = "btnhome";
+            this.btnhome.Size = new System.Drawing.Size(75, 23);
+            this.btnhome.TabIndex = 14;
+            this.btnhome.Text = "Home";
+            this.btnhome.UseVisualStyleBackColor = true;
             // 
             // Books
             // 
@@ -98,6 +178,15 @@ namespace Library_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnhome);
+            this.Controls.Add(this.btnbookadd);
+            this.Controls.Add(this.btndeletebooks);
+            this.Controls.Add(this.btnviewbooks);
+            this.Controls.Add(this.txtdate);
+            this.Controls.Add(this.txtprice);
+            this.Controls.Add(this.txttitle);
+            this.Controls.Add(this.txtauthor);
+            this.Controls.Add(this.txtbookid);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -106,6 +195,7 @@ namespace Library_Management_System
             this.Controls.Add(this.label1);
             this.Name = "Books";
             this.Text = "ManageBooks";
+            this.Load += new System.EventHandler(this.Books_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,5 +209,14 @@ namespace Library_Management_System
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtbookid;
+        private System.Windows.Forms.TextBox txtauthor;
+        private System.Windows.Forms.TextBox txttitle;
+        private System.Windows.Forms.TextBox txtprice;
+        private System.Windows.Forms.TextBox txtdate;
+        private System.Windows.Forms.Button btnviewbooks;
+        private System.Windows.Forms.Button btndeletebooks;
+        private System.Windows.Forms.Button btnbookadd;
+        private System.Windows.Forms.Button btnhome;
     }
 }
