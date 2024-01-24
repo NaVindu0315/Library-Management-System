@@ -28,5 +28,12 @@ namespace Library_Management_System
             books.Show();
             this.Hide();
         }
+
+        private void btnlending_Click(object sender, EventArgs e)
+        {
+            lendings lends = new lendings();
+            lends.Show();
+            this.Hide();
+        }
     }
 }

@@ -146,6 +146,7 @@ namespace Library_Management_System
             this.btnlend.TabIndex = 11;
             this.btnlend.Text = "Lend the Book";
             this.btnlend.UseVisualStyleBackColor = true;
+            this.btnlend.Click += new System.EventHandler(this.btnlend_Click);
             // 
             // btnrecieve
             // 
