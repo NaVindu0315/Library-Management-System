@@ -62,6 +62,7 @@ namespace Library_Management_System
             this.btnhome.TabIndex = 2;
             this.btnhome.Text = "Home";
             this.btnhome.UseVisualStyleBackColor = true;
+            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 
             // btnlending
             // 
@@ -71,6 +72,7 @@ namespace Library_Management_System
             this.btnlending.TabIndex = 3;
             this.btnlending.Text = "Lending";
             this.btnlending.UseVisualStyleBackColor = true;
+            this.btnlending.Click += new System.EventHandler(this.btnlending_Click);
             // 
             // hstry
             // 
@@ -84,6 +86,7 @@ namespace Library_Management_System
             this.Controls.Add(this.label1);
             this.Name = "hstry";
             this.Text = "hstry";
+            this.Load += new System.EventHandler(this.hstry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

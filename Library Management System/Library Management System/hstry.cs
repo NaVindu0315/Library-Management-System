@@ -16,5 +16,24 @@ namespace Library_Management_System
         {
             InitializeComponent();
         }
+
+        private void btnlending_Click(object sender, EventArgs e)
+        {
+            lendings lends = new lendings();
+            lends.Show();
+            this.Hide();
+        }
+
+        private void btnhome_Click(object sender, EventArgs e)
+        {
+            Home hm = new Home();
+            hm.Show();
+            this.Hide();
+        }
+
+        private void hstry_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
