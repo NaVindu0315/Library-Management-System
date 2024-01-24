@@ -31,7 +31,10 @@ namespace Library_Management_System
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-
+            memberid = int.Parse(txtmemid.Text);
+            name = txtname.Text;
+            adrs = txtadrs.Text;
+            dob = txtdob.Text;
         }
     }
 }
