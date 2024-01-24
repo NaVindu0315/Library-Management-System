@@ -45,6 +45,13 @@ namespace Library_Management_System
 
         }
 
+        private void btnview_Click(object sender, EventArgs e)
+        {
+            viewmembers vw = new viewmembers();
+            vw.Show();
+            this.Hide();
+        }
+
         private void btnhome_Click(object sender, EventArgs e)
         {
             Home hm = new Home();

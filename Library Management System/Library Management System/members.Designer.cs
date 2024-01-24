@@ -146,6 +146,7 @@ namespace Library_Management_System
             this.btnview.TabIndex = 11;
             this.btnview.Text = "View Members";
             this.btnview.UseVisualStyleBackColor = true;
+            this.btnview.Click += new System.EventHandler(this.btnview_Click);
             // 
             // btnhome
             // 
