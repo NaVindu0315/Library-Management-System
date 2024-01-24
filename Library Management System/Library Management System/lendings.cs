@@ -16,5 +16,12 @@ namespace Library_Management_System
         {
             InitializeComponent();
         }
+
+        private void btnhome_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Hide();
+        }
     }
 }
