@@ -128,6 +128,7 @@ namespace Library_Management_System
             this.btnviewlendings.TabIndex = 9;
             this.btnviewlendings.Text = "View Lendings";
             this.btnviewlendings.UseVisualStyleBackColor = true;
+            this.btnviewlendings.Click += new System.EventHandler(this.btnviewlendings_Click);
             // 
             // btnbookdetails
             // 

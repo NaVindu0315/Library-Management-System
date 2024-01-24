@@ -86,6 +86,7 @@ namespace Library_Management_System
             this.Controls.Add(this.label1);
             this.Name = "viewlendings";
             this.Text = "viewlendings";
+            this.Load += new System.EventHandler(this.viewlendings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

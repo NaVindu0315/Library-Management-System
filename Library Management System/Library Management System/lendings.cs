@@ -25,6 +25,13 @@ namespace Library_Management_System
             InitializeComponent();
         }
 
+        private void btnviewlendings_Click(object sender, EventArgs e)
+        {
+            viewlendings views = new viewlendings();
+            views.Show();
+            this.Hide();
+        }
+
         private void btnhome_Click(object sender, EventArgs e)
         {
             Home home = new Home();

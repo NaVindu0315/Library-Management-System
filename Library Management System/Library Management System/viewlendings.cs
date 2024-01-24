@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Library_Management_System
 {
     public partial class viewlendings : Form
     {
+        //db connection
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Databases\lmsdb.mdf;Integrated Security=True;Connect Timeout=30");
+
         public viewlendings()
         {
             InitializeComponent();
@@ -29,6 +33,16 @@ namespace Library_Management_System
             lendings lends = new lendings();
             lends.Show();
             this.Hide();
+        }
+
+        private void viewlendings_Load(object sender, EventArgs e)
+        {
+            string qryy = "SELECT * FROM lendings ";
+            SqlDataAdapter adapter = new SqlDataAdapter(qryy, con);
+            DataSet set = new DataSet();
+            adapter.Fill(set, "lendings");
+            dataGridView1.DataSource = set.Tables["lendings"];
+
         }
     }
 }
