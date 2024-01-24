@@ -31,6 +31,31 @@ namespace Library_Management_System
 
             string addbook = "INSERT INTO books VALUES ('" + bookid + "','" + author + "','" + title + "','" + price + "','" + date + "')";
             SqlCommand adbk = new SqlCommand(addbook, con);
+
+            //try catch block 
+            try
+            {
+                con.Open();
+                adbk.ExecuteNonQuery();
+                MessageBox.Show("New Book " + title + " is succesfully added under "+bookid+" code");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                con.Close();
+            }
+            ///block end
+            ///txtbox clearing
+            txtbookid.Text = "";
+            txtauthor.Text = "";
+            txttitle.Text = "";
+            txtprice.Text = "";
+            txtdate.Text = "";
+
         }
 
       
