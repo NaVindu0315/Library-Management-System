@@ -73,8 +73,28 @@ namespace Library_Management_System
             SqlCommand adnw = new SqlCommand(adprvs, con);
             SqlCommand delete = new SqlCommand(del, con);
             ///try catch block
-            ///
+            try
+            {
+                con.Open();
+                adnw.ExecuteNonQuery();
+                delete.ExecuteNonQuery();
+                MessageBox.Show("Book " + bookid + " recieved");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                con.Close();
+            }
             ///end
+            ///
+            txtbookid.Text = "";
+            txtmemid.Text = "";
+            txtbrwdate.Text = "";
+            txtrtndate.Text = "";
 
 
 
