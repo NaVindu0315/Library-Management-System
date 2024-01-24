@@ -23,6 +23,26 @@ namespace Library_Management_System
 
         private void btndeletebooks_Click(object sender, EventArgs e)
         {
+            bookid = int.Parse(txtbookid.Text);
+            string del = "DELETE FROM books WHERE bookid ='" + bookid + "'";
+            SqlCommand cmddel = new SqlCommand(del, con);
+            ///try catch block
+            try
+            {
+                con.Open();
+                cmddel.ExecuteNonQuery();
+                MessageBox.Show("Book " + bookid + " removed from the Database successfully");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            ///block end]
+            txtbookid.Text = "";
 
         }
 
