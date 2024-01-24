@@ -100,6 +100,13 @@ namespace Library_Management_System
 
         }
 
+        private void btnhistory_Click(object sender, EventArgs e)
+        {
+            hstry hs = new hstry();
+            hs.Show();
+            this.Hide();
+        }
+
         private void btnhome_Click(object sender, EventArgs e)
         {
             Home home = new Home();

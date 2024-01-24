@@ -178,6 +178,7 @@ namespace Library_Management_System
             this.btnhistory.TabIndex = 14;
             this.btnhistory.Text = "Previous Details";
             this.btnhistory.UseVisualStyleBackColor = true;
+            this.btnhistory.Click += new System.EventHandler(this.btnhistory_Click);
             // 
             // lendings
             // 
