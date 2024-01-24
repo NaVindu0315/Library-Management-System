@@ -90,6 +90,12 @@
     <Compile Include="viewlendings.Designer.cs">
       <DependentUpon>viewlendings.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewmembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewmembers.Designer.cs">
+      <DependentUpon>viewmembers.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="bookview.resx">
       <DependentUpon>bookview.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +125,9 @@
     </Compile>
     <EmbeddedResource Include="viewlendings.resx">
       <DependentUpon>viewlendings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewmembers.resx">
+      <DependentUpon>viewmembers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
