@@ -15,6 +15,10 @@ namespace Library_Management_System
    
     public partial class Books : Form
     {
+        //variables
+        string author, title, date;
+        int bookid, price;
+     
         //db connection
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Databases\lmsdb.mdf;Integrated Security=True;Connect Timeout=30");
         public Books()
