@@ -46,6 +46,20 @@ namespace Library_Management_System
 
         }
 
+        private void btnviewbooks_Click(object sender, EventArgs e)
+        {
+            bookview bkview = new bookview();
+            bkview.Show();
+            this.Hide();
+        }
+
+        private void btnhome_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Hide();
+        }
+
         private void btnbookadd_Click(object sender, EventArgs e)
         {
             bookid = int.Parse(txtbookid.Text);
