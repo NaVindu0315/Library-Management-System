@@ -144,6 +144,7 @@ namespace Library_Management_System
             this.btnviewbooks.TabIndex = 11;
             this.btnviewbooks.Text = "View";
             this.btnviewbooks.UseVisualStyleBackColor = true;
+            this.btnviewbooks.Click += new System.EventHandler(this.btnviewbooks_Click);
             // 
             // btndeletebooks
             // 
@@ -173,6 +174,7 @@ namespace Library_Management_System
             this.btnhome.TabIndex = 14;
             this.btnhome.Text = "Home";
             this.btnhome.UseVisualStyleBackColor = true;
+            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 
             // Books
             // 
