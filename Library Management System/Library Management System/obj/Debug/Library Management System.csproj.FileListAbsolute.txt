@@ -1,0 +1,11 @@
+F:\other projects\Library-Management-System\Library Management System\Library Management System\bin\Debug\Library Management System.exe.config
+F:\other projects\Library-Management-System\Library Management System\Library Management System\bin\Debug\Library Management System.exe
+F:\other projects\Library-Management-System\Library Management System\Library Management System\bin\Debug\Library Management System.pdb
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library Management System.csproj.AssemblyReference.cache
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library_Management_System.Home.resources
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library_Management_System.Books.resources
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library_Management_System.Properties.Resources.resources
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library Management System.csproj.GenerateResource.cache
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library Management System.csproj.CoreCompileInputs.cache
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library Management System.exe
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library Management System.pdb

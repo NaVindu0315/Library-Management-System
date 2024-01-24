@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace Library_Management_System
 {
-    public partial class Form1 : Form
+    public partial class Home : Form
     {
-        public Form1()
+        public Home()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnbooks_Click(object sender, EventArgs e)
+        {
+            Books books = new Books();
+            books.Show();
+            this.Hide();
         }
     }
 }
