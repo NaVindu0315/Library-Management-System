@@ -21,6 +21,11 @@ namespace Library_Management_System
         string author, title, date;
         int bookid, price;
 
+        private void btndeletebooks_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnbookadd_Click(object sender, EventArgs e)
         {
             bookid = int.Parse(txtbookid.Text);

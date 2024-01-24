@@ -153,6 +153,7 @@ namespace Library_Management_System
             this.btndeletebooks.TabIndex = 12;
             this.btndeletebooks.Text = "Delete";
             this.btndeletebooks.UseVisualStyleBackColor = true;
+            this.btndeletebooks.Click += new System.EventHandler(this.btndeletebooks_Click);
             // 
             // btnbookadd
             // 
