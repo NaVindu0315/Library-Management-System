@@ -62,6 +62,7 @@ namespace Library_Management_System
             this.btnhome.TabIndex = 2;
             this.btnhome.Text = "Home";
             this.btnhome.UseVisualStyleBackColor = true;
+            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 
             // btnmembers
             // 

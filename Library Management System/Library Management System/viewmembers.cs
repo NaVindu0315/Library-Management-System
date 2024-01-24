@@ -29,5 +29,12 @@ namespace Library_Management_System
             adapter.Fill(set, "members");
             dataGridView1.DataSource = set.Tables["members"];
         }
+
+        private void btnhome_Click(object sender, EventArgs e)
+        {
+            Home hm = new Home();
+            hm.Show();
+            this.Hide();
+        }
     }
 }
