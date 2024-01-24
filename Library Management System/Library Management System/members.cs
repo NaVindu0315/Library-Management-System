@@ -22,6 +22,29 @@ namespace Library_Management_System
             InitializeComponent();
         }
 
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            memberid = int.Parse(txtmemid.Text);
+            string del = "DELETE FROM members WHERE memberid ='" + memberid + "'";
+            SqlCommand cmddel = new SqlCommand(del, con);
+            try
+            {
+                con.Open();
+                cmddel.ExecuteNonQuery();
+                MessageBox.Show("Member " + memberid + " removed from the Library successfully");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            txtmemid.Text = "";
+
+        }
+
         private void btnhome_Click(object sender, EventArgs e)
         {
             Home hm = new Home();

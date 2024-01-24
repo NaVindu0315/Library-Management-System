@@ -136,6 +136,7 @@ namespace Library_Management_System
             this.btndelete.TabIndex = 10;
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // btnview
             // 
