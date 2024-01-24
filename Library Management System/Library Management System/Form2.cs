@@ -28,6 +28,9 @@ namespace Library_Management_System
             title = txttitle.Text;
             price = int.Parse(txtprice.Text);
             date = txtdate.Text;
+
+            string addbook = "INSERT INTO books VALUES ('" + bookid + "','" + author + "','" + title + "','" + price + "','" + date + "')";
+            SqlCommand adbk = new SqlCommand(addbook, con);
         }
 
       
