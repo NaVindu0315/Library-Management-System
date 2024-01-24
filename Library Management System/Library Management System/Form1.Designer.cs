@@ -54,6 +54,7 @@ namespace Library_Management_System
             this.btnbooks.TabIndex = 1;
             this.btnbooks.Text = "Books";
             this.btnbooks.UseVisualStyleBackColor = true;
+            this.btnbooks.Click += new System.EventHandler(this.btnbooks_Click);
             // 
             // btnlending
             // 

@@ -21,5 +21,12 @@ namespace Library_Management_System
         {
 
         }
+
+        private void btnbooks_Click(object sender, EventArgs e)
+        {
+            Books books = new Books();
+            books.Show();
+            this.Hide();
+        }
     }
 }
