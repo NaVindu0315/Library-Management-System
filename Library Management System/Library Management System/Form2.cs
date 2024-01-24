@@ -15,12 +15,22 @@ namespace Library_Management_System
    
     public partial class Books : Form
     {
+        //db connection
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Databases\lmsdb.mdf;Integrated Security=True;Connect Timeout=30");
         //variables
         string author, title, date;
         int bookid, price;
-     
-        //db connection
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Databases\lmsdb.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void btnbookadd_Click(object sender, EventArgs e)
+        {
+            bookid = int.Parse(txtbookid.Text);
+            author = txtauthor.Text;
+            title = txttitle.Text;
+            price = int.Parse(txtprice.Text);
+            date = txtdate.Text;
+        }
+
+      
         public Books()
         {
             InitializeComponent();

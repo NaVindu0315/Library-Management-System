@@ -162,6 +162,7 @@ namespace Library_Management_System
             this.btnbookadd.TabIndex = 13;
             this.btnbookadd.Text = "Add";
             this.btnbookadd.UseVisualStyleBackColor = true;
+            this.btnbookadd.Click += new System.EventHandler(this.btnbookadd_Click);
             // 
             // btnhome
             // 
