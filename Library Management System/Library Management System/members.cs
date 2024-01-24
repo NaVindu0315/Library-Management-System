@@ -35,6 +35,30 @@ namespace Library_Management_System
             name = txtname.Text;
             adrs = txtadrs.Text;
             dob = txtdob.Text;
+            string addnew = "INSERT INTO members VALUES ('" + memberid + "','" + name + "','" + adrs + "','" + dob + "')";
+            SqlCommand adnw = new SqlCommand(addnew, con);
+            ///try catch block
+            try
+            {
+                con.Open();
+                adnw.ExecuteNonQuery();
+                MessageBox.Show("New Member " + name + " is succesfully enrolled");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                con.Close();
+            }
+            ///end
+            txtmemid.Text = "";
+            txtdob.Text = "";
+            txtadrs.Text = ""; 
+            txtname.Text = ""; 
+
         }
     }
 }

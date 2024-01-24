@@ -35,5 +35,12 @@ namespace Library_Management_System
             lends.Show();
             this.Hide();
         }
+
+        private void btnmembers_Click(object sender, EventArgs e)
+        {
+            members mem = new members();
+            mem.Show();
+            this.Hide();
+        }
     }
 }
