@@ -32,6 +32,54 @@ namespace Library_Management_System
             this.Hide();
         }
 
+        private void btnbookdetails_Click(object sender, EventArgs e)
+        {
+            bookid = int.Parse(txtbookid.Text);
+            string SelectSql = "SELECT memberid,brwdate FROM lendings WHERE bookid = '" + bookid + "'";
+            SqlCommand comsel = new SqlCommand(SelectSql, con);
+            ///try catch block
+            try
+            {
+                con.Open();
+                using (SqlDataReader read = comsel.ExecuteReader())
+                {
+                    while (read.Read())
+                    {
+                        txtmemid.Text = (read["memberid"].ToString());
+                        txtbrwdate.Text = (read["brwdate"].ToString());
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            ///end
+        }
+
+        private void btnrecieve_Click(object sender, EventArgs e)
+        {
+            memberid = txtmemid.Text;
+            bookid = int.Parse(txtbookid.Text);
+            brwdate = txtbrwdate.Text;
+            rtrndate = txtrtndate.Text;
+            string adprvs = "INSERT INTO previous VALUES ('" + bookid + "','" + memberid + "','" + brwdate + "','" + rtrndate + "')";
+            string del = "DELETE FROM lendings WHERE bookid ='" + bookid + "'";
+            SqlCommand adnw = new SqlCommand(adprvs, con);
+            SqlCommand delete = new SqlCommand(del, con);
+            ///try catch block
+            ///
+            ///end
+
+
+
+        }
+
         private void btnhome_Click(object sender, EventArgs e)
         {
             Home home = new Home();

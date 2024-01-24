@@ -138,6 +138,7 @@ namespace Library_Management_System
             this.btnbookdetails.TabIndex = 10;
             this.btnbookdetails.Text = "Get Book Details";
             this.btnbookdetails.UseVisualStyleBackColor = true;
+            this.btnbookdetails.Click += new System.EventHandler(this.btnbookdetails_Click);
             // 
             // btnlend
             // 
@@ -157,6 +158,7 @@ namespace Library_Management_System
             this.btnrecieve.TabIndex = 12;
             this.btnrecieve.Text = "Recieve the Book";
             this.btnrecieve.UseVisualStyleBackColor = true;
+            this.btnrecieve.Click += new System.EventHandler(this.btnrecieve_Click);
             // 
             // btnhome
             // 
