@@ -10,3 +10,8 @@ F:\other projects\Library-Management-System\Library Management System\Library Ma
 F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library Management System.exe
 F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library Management System.pdb
 F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library_Management_System.bookview.resources
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library_Management_System.lendings.resources
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library_Management_System.viewlendings.resources
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library_Management_System.hstry.resources
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library_Management_System.members.resources
+F:\other projects\Library-Management-System\Library Management System\Library Management System\obj\Debug\Library_Management_System.viewmembers.resources
